@@ -6,6 +6,11 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=6.29.5",
+    "numpy>=2.2.3",
+    "gym>=0.26.2",
+    "gymnasium[mujoco,mujuco]>=1.1.1",
+    "torch>=2.6.0",
+    "matplotlib>=3.10.1",
 ]
 
 [build-system]
