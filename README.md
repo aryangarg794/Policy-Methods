@@ -10,6 +10,3 @@ Training Curve for Q Actor-Critic:
 
 ![Sample training loop example](images/ac.png)
 
-
-
-The training is extremely finicky; there is likely some small mistake with the implementation (TODO).
