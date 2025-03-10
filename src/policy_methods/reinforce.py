@@ -113,7 +113,7 @@ class PolicyGradient(nn.Module):
         
     def train(
         self,
-        num_eps: int = 200,
+        num_steps: int = 200,
         save=False
     ) -> list:
         average_rewards = RollingAverage(20)
@@ -127,7 +127,7 @@ class PolicyGradient(nn.Module):
         def reset_buffer():
             return {'states': [], 'actions': [], 'rewards' : []}
         
-        for step in range(num_eps):
+        for step in range(num_steps):
             obs, _ = self.env.reset()
             done = False
             ep_reward = 0 
